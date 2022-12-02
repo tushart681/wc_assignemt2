@@ -1,0 +1,186 @@
+.container {
+    background-color: #161616;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    width: 90%;
+    border-radius: 15px;
+
+    background: #161616;
+    border-radius: 30px;
+}
+
+.container h1 {
+    font-size: 70px;
+}
+
+.flex1 {
+    margin-left: 50px;
+}
+
+
+.container div h1,
+p {
+    color: white;
+}
+
+.container .flex1,
+.flex2 {
+    width: 50%;
+}
+
+.flex2 {
+    top: 83px;
+    transition: width 5s;
+}
+
+.flex2:hover {
+    width: 400px;
+}
+
+.container div button {
+    background-color: #DD0000;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+
+
+.container div button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* second_section */
+.buttons {
+    background-color: #161616;
+    height: 175px;
+    width: 175px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttons button:hover {
+    background-color: #DD0000;
+}
+
+.btnMatch1 {
+    color: white;
+}
+
+.buttons button a:hover {
+    color: white;
+}
+
+/* 3rd banner */
+.flag {
+    display: flex;
+}
+
+.flag_section {
+    border: 2px solid whitesmoke;
+    width: 300px;
+}
+
+.flag_comment p {
+    color: #4D4D4D;
+}
+
+.grid_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.grid_section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+.ButtonMatch {
+    display: flex;
+    gap: 30px;
+}
+
+.btnMatch1 .grid_section {
+    visibility: visible;
+}
+
+.btnMatch1 .grid_section1 {
+    visibility: hidden;
+}
+
+.btnMatch2 .grid_section1 {
+    visibility: visible;
+}
+
+.btnMatch2 .grid_section {
+    visibility: hidden;
+}
+
+.btnMatch .grid_section1 {
+    visibility: hidden;
+}
+
+.btnMatch .grid_section {
+    visibility: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.mid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 768px) {
+    .grid_section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+        margin-top: 15px;
+    }
+    .mid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+        margin-top: 15px;
+    }
+}
